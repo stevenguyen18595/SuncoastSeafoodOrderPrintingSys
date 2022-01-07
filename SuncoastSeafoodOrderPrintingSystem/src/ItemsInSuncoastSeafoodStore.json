@@ -1,0 +1,339 @@
+{
+  "items": [{
+      "name": "Special (Dory & Chips",
+      "price": "12",
+      "size": "Large",
+      "category": "Fish And Chip Pack",
+      "description":""
+    },
+    {
+      "name": "Special (Dory & Chips)",
+      "price": "9",
+      "size": "Small",
+      "category": "Fish And Chip Pack",
+      "description":""
+    },
+    {
+      "name": "Serve of Calamari & Chips",
+      "price": "",
+      "size": "",
+      "category": "Fish And Chip Pack",
+      "description":""
+    },
+    {
+      "name": "Snack Pack",
+      "price": "17.5",
+      "size": "",
+      "category": "Fish And Chip Pack",
+      "description":""
+    },
+    {
+      "name": "Flathead or Whiting & Chips",
+      "price": "13.5",
+      "size": "",
+      "category": "Fish And Chip Pack",
+      "description":""
+    },
+    {
+      "name": "Fish,Chips & Salad w Dressing",
+      "price": "21",
+      "size": "",
+      "category": "Fish And Chip Pack",
+      "description":""
+    },
+    {
+      "name": "Fish & Salad",
+      "price": "17",
+      "size": "",
+      "category": "Fish And Chip Pack",
+      "description":""
+    },
+    {
+      "name": "Pack for Two",
+      "price": "34.5",
+      "size": "",
+      "category": "Fish And Chip Pack",
+      "description":""
+    },
+    {
+      "name": "Family Pack",
+      "price": "65",
+      "size": "",
+      "category": "Fish And Chip Pack",
+      "description":""
+    },
+    {
+      "name": "Fishermans Basket",
+      "price": "24",
+      "size": "",
+      "category": "Fish And Chip Pack",
+      "description":""
+    },
+    {
+      "name": "Kids Pack",
+      "price": "",
+      "size": "",
+      "category": "Fish And Chip Pack",
+      "description":""
+    },
+    {
+      "name": "Barramundi",
+      "price": "13",
+      "size": "",
+      "category": "Fish",
+      "description":""
+    },
+    {
+      "name": "Cod",
+      "price": "11",
+      "size": "",
+      "category": "Fish",
+      "description":""
+    },
+    {
+      "name": "whitting",
+      "price": "3.5",
+      "size": "",
+      "category": "Fish",
+      "description":""
+    },
+    {
+      "name": "Flathead",
+      "price": "3.5",
+      "size": "",
+      "category": "Fish",
+      "description":""
+    },
+    {
+      "name": "Local Snapper",
+      "price": "12",
+      "size": "",
+      "category": "Fish",
+      "description":""
+    },
+    {
+      "name": "Dory",
+      "price": "10",
+      "size": "",
+      "category": "Fish",
+      "description":""
+    },
+    {
+      "name": "Salmon Portion",
+      "price": "13",
+      "size": "",
+      "category": "Fish",
+      "description":""
+    },
+    {
+      "name": "Hamburger (home-made)",
+      "price": "12",
+      "size": "",
+      "category": "Burgers",
+      "description":""
+    },
+    {
+      "name": "Hamburger with the lot",
+      "price": "14",
+      "size": "",
+      "category": "Burgers",
+      "description":""
+    },
+    {
+      "name": "Steak Burger (rib fillet)",
+      "price": "13",
+      "size": "",
+      "category": "Burgers",
+      "description":""
+    },
+    {
+      "name": "Steak Burger with the lot",
+      "price": "15",
+      "size": "",
+      "category": "Burgers",
+      "description":""
+    },
+    {
+      "name": "Chicken Burger",
+      "price": "12",
+      "size": "",
+      "category": "Burgers",
+      "description":""
+    },
+    {
+      "name": "Fish Burger",
+      "price": "12",
+      "size": "",
+      "category": "Burgers",
+      "description":""
+    },
+    {
+      "name": "Veggie Burger",
+      "price": "",
+      "size": "",
+      "category": "Burgers",
+      "description":""
+    },
+    {
+      "name": "Bacon & Egg Roll",
+      "price": "",
+      "size": "",
+      "category": "Burgers",
+      "description":""
+    },
+    {
+      "name": "Loaded Fries",
+      "price": "9",
+      "size": "Small",
+      "category": "Chips",
+      "description":""
+    },
+    {
+      "name": "Loaded Fries",
+      "price": "14",
+      "size": "Large",
+      "category": "Chips",
+      "description":""
+    },
+    {
+        "name": "Sea Scallop",
+        "price": "3",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Calamari",
+        "price": "12",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Crumbed Prawn Cutlet",
+        "price": "3",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Seafood Stick",
+        "price": "2.5",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Chicko roll",
+        "price": "4",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Cornjack",
+        "price": "3.9",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Dim Sim",
+        "price": "1.5",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Homemade Potato Scallop",
+        "price": "1.5",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Fish Cake",
+        "price": "4",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Spring Roll",
+        "price": "4",
+        "size": "Large",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Fish Bite",
+        "price": "1.4",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Chiken Nugget",
+        "price": "1.4",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Pluto Pup",
+        "price": "3.9",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Pineapple Fritter",
+        "price": "3.5",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Crumbed Sausage",
+        "price": "4",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Battered Sav",
+        "price": "3.9",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Kabana",
+        "price": "3.9",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Oyster",
+        "price": "3",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Deep Fried Mini",
+        "price": "2.5",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      },
+      {
+        "name": "Onion Rings",
+        "price": "6",
+        "size": "",
+        "category": "Special Dishes",
+        "description":""
+      }
+  ]
+}
