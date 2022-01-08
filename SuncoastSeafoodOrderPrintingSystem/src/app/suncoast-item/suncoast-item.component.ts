@@ -1,5 +1,6 @@
 import { Component, OnInit, ɵɵsetComponentScope } from '@angular/core';
 import { RequiredValidator } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import {SuncoastItem} from '../SuncoastItem'
 @Component({
@@ -16,6 +17,7 @@ export class SuncoastItemComponent implements OnInit {
   SideDished: SuncoastItem[] = [];
   chips: SuncoastItem[] = [];
   currentItems: SuncoastItem[] = [];
+  currentItemsAfterEliminatingDublicates: SuncoastItem[] = [];
   currentItemsInStringFormat = "";
 
   items = require('../../assets/ItemsInSuncoastSeafoodStore.json');
@@ -43,7 +45,7 @@ export class SuncoastItemComponent implements OnInit {
     this.currentItemsInStringFormat = "";
     this.currentItems.push(item);
     for(let currentItem of this.currentItems){
-      this.currentItemsInStringFormat = this.currentItemsInStringFormat + currentItem.name + ",";
+      this.currentItemsInStringFormat = this.currentItemsInStringFormat + currentItem.name + currentItem.size + "," + " ";
     }
 
   }
