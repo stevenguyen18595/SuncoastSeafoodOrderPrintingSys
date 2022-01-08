@@ -16,7 +16,7 @@ export class SuncoastItemComponent implements OnInit {
   SideDished: SuncoastItem[] = [];
   chips: SuncoastItem[] = [];
   currentItems: SuncoastItem[] = [];
-  
+  currentItemsInStringFormat = "";
 
   items = require('../../assets/ItemsInSuncoastSeafoodStore.json');
   ngOnInit(): void {
@@ -40,10 +40,16 @@ export class SuncoastItemComponent implements OnInit {
     console.log(this.currentItems)
   }
   addItemToOrder(item: SuncoastItem){
+    this.currentItemsInStringFormat = "";
     this.currentItems.push(item);
+    for(let currentItem of this.currentItems){
+      this.currentItemsInStringFormat = this.currentItemsInStringFormat + currentItem.name + ",";
+    }
+
   }
   deleteCurrentOrder(){
     this.currentItems = [];
+    this.currentItemsInStringFormat = "";
   }
   
 }

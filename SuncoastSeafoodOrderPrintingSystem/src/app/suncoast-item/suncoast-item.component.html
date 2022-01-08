@@ -15,6 +15,7 @@
   h5,
   h6 {
     margin: 8px 0;
+    color: #dc3545;
   }
 
   p {
@@ -295,64 +296,71 @@
 
 </style>
 <div class="content">
-  <h2>Chips Pack</h2>
+  <h5>Chips Pack</h5>
   <div class="card-container">
     <div *ngFor="let chipsItem of chips ">
-      <button class="card card-small" (click)="addItemToOrder(chipsItem)" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <button id="chipPack" class="card card-small" (click)="addItemToOrder(chipsItem)" tabindex="0">
+        <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{chipsItem.name}}</span>
         <p><small>{{chipsItem.size}}</small></p>
       </button>
     </div>
   </div>
-  <h2>Fish And Chips Packs</h2>
+  <h5>Fish And Chips Packs</h5>
   <input type="hidden" #selection>
   <div class="card-container">
-
     <div *ngFor="let fishAndChipItem of fishAndChipsPacks">
-      <button class="card card-small" (click)="addItemToOrder(fishAndChipItem)" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <button id="FishAndChips" class="card card-small" (click)="addItemToOrder(fishAndChipItem)" tabindex="0">
+        <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{fishAndChipItem.name}}</span>
       </button>
     </div>
   </div>
-  <h2>Fish Only</h2>
+  <h5>Fish Only</h5>
   <div class="card-container">
     <div *ngFor="let FishItem of fishes ">
-      <button class="card card-small" (click)="addItemToOrder(FishItem)" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <button id="fishPack" class="card card-small" (click)="addItemToOrder(FishItem)" tabindex="0">
+        <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{FishItem.name}}</span>
       </button>
     </div>
   </div>
-  <h2>Burgers</h2>
+  <h5>Burgers</h5>
   <div class="card-container">
     <div *ngFor="let burgerItem of burgers ">
-      <button class="card card-small" (click)="addItemToOrder(burgerItem)" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <button id="burgers" class="card card-small" (click)="addItemToOrder(burgerItem)" tabindex="0">
+        <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{burgerItem.name}}</span>
       </button>
     </div>
   </div>
-  <h2>Special Dishes</h2>
+  <h5>Special Dishes</h5>
   <div class="card-container">
     <div *ngFor="let specialItem of SideDished ">
-      <button class="card card-small" (click)="addItemToOrder(specialItem)" tabindex="0">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <button id="specialDishes" class="card card-small" (click)="addItemToOrder(specialItem)" tabindex="0">
+        <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{specialItem.name}}</span>
       </button>
     </div>
   </div>
 
 </div>
-<div class="content">
-  <button (click)="printThisPage()">Generate Order</button>
+<div class="form">
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">This Order now includes:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" >{{currentItemsInStringFormat}}</textarea>
+  </div>
 </div>
 <div class="content">
-  <button (click)="deleteCurrentOrder()">Delete All Items In Order</button>
+  <div class="btn-group">
+    <button class=" btn btn-danger" (click)="printThisPage()">Generate Order</button>
+    <button class="btn btn-success" (click)="deleteCurrentOrder()">Delete All Items In Order</button>
+  </div>
+
+  
 </div>

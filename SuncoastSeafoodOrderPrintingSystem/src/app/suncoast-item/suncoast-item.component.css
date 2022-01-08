@@ -1,3 +1,19 @@
-h2{
-    color: red;
+#chipPack{
+    color:#fd7e14;
+}
+#FishAndChips{
+    color: #B29506;
+}
+#fishPack{
+    color: #17a2b8;
+}
+#burgers{
+    color: rgb(168, 44, 44);
+}
+#specialDishes{
+    color: #28a745;
+}
+label{
+    color: #17a2b8;
+    font-weight: bold;
 }
