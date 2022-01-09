@@ -299,7 +299,7 @@
   <h5>Chips Pack</h5>
   <div class="card-container">
     <div *ngFor="let chipsItem of chips ">
-      <button id="chipPack" class="card card-small" (click)="addItemToOrder(chipsItem)" tabindex="0">
+      <button id="chipPack" class="card card-small" (click)="openDialog(chipsItem)" tabindex="0">
         <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{chipsItem.name}}</span>
@@ -311,7 +311,7 @@
   <input type="hidden" #selection>
   <div class="card-container">
     <div *ngFor="let fishAndChipItem of fishAndChipsPacks">
-      <button id="FishAndChips" class="card card-small" (click)="addItemToOrder(fishAndChipItem)" tabindex="0">
+      <button id="FishAndChips" class="card card-small" (click)="openDialog(fishAndChipItem)" tabindex="0">
         <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{fishAndChipItem.name}}</span>
@@ -321,7 +321,7 @@
   <h5>Fish Only</h5>
   <div class="card-container">
     <div *ngFor="let FishItem of fishes ">
-      <button id="fishPack" class="card card-small" (click)="addItemToOrder(FishItem)" tabindex="0">
+      <button id="fishPack" class="card card-small" (click)="openDialog(FishItem)" tabindex="0">
         <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{FishItem.name}}</span>
@@ -331,7 +331,7 @@
   <h5>Burgers</h5>
   <div class="card-container">
     <div *ngFor="let burgerItem of burgers ">
-      <button id="burgers" class="card card-small" (click)="addItemToOrder(burgerItem)" tabindex="0">
+      <button id="burgers" class="card card-small" (click)="openDialog(burgerItem)" tabindex="0">
         <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{burgerItem.name}}</span>
@@ -341,14 +341,13 @@
   <h5>Special Dishes</h5>
   <div class="card-container">
     <div *ngFor="let specialItem of SideDished ">
-      <button id="specialDishes" class="card card-small" (click)="addItemToOrder(specialItem)" tabindex="0">
+      <button id="specialDishes" class="card card-small" (click)="openDialog(specialItem)" tabindex="0">
         <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{specialItem.name}}</span>
       </button>
     </div>
   </div>
-
 </div>
 <div class="form">
   <div class="form-group">

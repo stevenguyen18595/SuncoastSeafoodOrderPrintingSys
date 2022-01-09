@@ -4,364 +4,416 @@
       "price": "12",
       "size": "Large",
       "category": "Fish And Chip Pack",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Special (Dory & Chips)",
       "price": "9",
       "size": "Small",
       "category": "Fish And Chip Pack",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Serve of Calamari & Chips",
       "price": "",
       "size": "",
       "category": "Fish And Chip Pack",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Snack Pack",
       "price": "17.5",
       "size": "",
       "category": "Fish And Chip Pack",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Flathead or Whiting & Chips",
       "price": "13.5",
       "size": "",
       "category": "Fish And Chip Pack",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Fish,Chips & Salad w Dressing",
       "price": "21",
       "size": "",
       "category": "Fish And Chip Pack",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Fish & Salad",
       "price": "17",
       "size": "",
       "category": "Fish And Chip Pack",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Pack for Two",
       "price": "34.5",
       "size": "",
       "category": "Fish And Chip Pack",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Family Pack",
       "price": "65",
       "size": "",
       "category": "Fish And Chip Pack",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Fishermans Basket",
       "price": "24",
       "size": "",
       "category": "Fish And Chip Pack",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Kids Pack",
       "price": "",
       "size": "",
       "category": "Fish And Chip Pack",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Barramundi",
       "price": "13",
       "size": "",
       "category": "Fish",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Cod",
       "price": "11",
       "size": "",
       "category": "Fish",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "whitting",
       "price": "3.5",
       "size": "",
       "category": "Fish",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Flathead",
       "price": "3.5",
       "size": "",
       "category": "Fish",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Local Snapper",
       "price": "12",
       "size": "",
       "category": "Fish",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Dory",
       "price": "10",
       "size": "",
       "category": "Fish",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Salmon Portion",
       "price": "13",
       "size": "",
       "category": "Fish",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Hamburger (home-made)",
       "price": "12",
       "size": "",
       "category": "Burgers",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Hamburger with the lot",
       "price": "14",
       "size": "",
       "category": "Burgers",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Steak Burger (rib fillet)",
       "price": "13",
       "size": "",
       "category": "Burgers",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Steak Burger with the lot",
       "price": "15",
       "size": "",
       "category": "Burgers",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Chicken Burger",
       "price": "12",
       "size": "",
       "category": "Burgers",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Fish Burger",
       "price": "12",
       "size": "",
       "category": "Burgers",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Veggie Burger",
       "price": "",
       "size": "",
       "category": "Burgers",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Bacon & Egg Roll",
       "price": "",
       "size": "",
       "category": "Burgers",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Fries-",
       "price": "4",
       "size": "Small",
       "category": "Chips",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Fries-",
       "price": "6",
       "size": "Medium6",
       "category": "Chips",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Fries-",
       "price": "8",
       "size": "Medium8",
       "category": "Chips",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Fries-",
       "price": "12",
       "size": "Large",
       "category": "Chips",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Salt",
       "price": "0",
       "size": "",
       "category": "Chips",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
       "name": "Chiken Salt",
       "price": "0",
       "size": "",
       "category": "Chips",
-      "description":""
+      "description":"",
+      "quantity":""
     },
     {
         "name": "Sea Scallop",
         "price": "3",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Calamari",
         "price": "12",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Crumbed Prawn Cutlet",
         "price": "3",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Seafood Stick",
         "price": "2.5",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Chicko roll",
         "price": "4",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Cornjack",
         "price": "3.9",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Dim Sim",
         "price": "1.5",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Homemade Potato Scallop",
         "price": "1.5",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Fish Cake",
         "price": "4",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Spring Roll",
         "price": "4",
         "size": "Large",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Fish Bite",
         "price": "1.4",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Chiken Nugget",
         "price": "1.4",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Pluto Pup",
         "price": "3.9",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Pineapple Fritter",
         "price": "3.5",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Crumbed Sausage",
         "price": "4",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Battered Sav",
         "price": "3.9",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Kabana",
         "price": "3.9",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Oyster",
         "price": "3",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Deep Fried Mini",
         "price": "2.5",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       },
       {
         "name": "Onion Rings",
         "price": "6",
         "size": "",
         "category": "Special Dishes",
-        "description":""
+        "description":"",
+        "quantity":""
       }
   ]
 }

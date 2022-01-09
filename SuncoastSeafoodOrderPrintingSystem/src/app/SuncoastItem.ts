@@ -4,4 +4,5 @@ export class SuncoastItem{
     price:string = "";
     category:string = "";
     description: string = "";
+    quantity: string = "";
 }
