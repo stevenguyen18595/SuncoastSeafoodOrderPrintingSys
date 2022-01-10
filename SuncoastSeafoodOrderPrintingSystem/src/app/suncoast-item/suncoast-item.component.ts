@@ -3,7 +3,7 @@ import { RequiredValidator } from '@angular/forms';
 import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dialog';
 import { stringify } from 'querystring';
 import { SuncoastItemDialogComponent } from '../suncoast-item-dialog/suncoast-item-dialog.component';
-import { SuncoastItem } from '../SuncoastItem'
+import { SuncoastItem } from '../model/SuncoastItem.model'
 @Component({
   selector: 'app-suncoast-item',
   templateUrl: './suncoast-item.component.html',
