@@ -11,14 +11,19 @@ import {SuncoastItemComponent} from '../suncoast-item/suncoast-item.component'
 export class SuncoastItemDialogComponent implements OnInit {
   quantityOfItem: string[] =["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"]
   selectedQuantity: string = "";
-  constructor(public dialogRef: MatDialogRef<SuncoastItemDialogComponent>,@Optional() @Inject(MAT_DIALOG_DATA) public data: any) {
+  constructor(public dialogRef: MatDialogRef<SuncoastItemDialogComponent>,@Optional() @Inject(MAT_DIALOG_DATA) public data: DialogData) {
 
   }
   ngOnInit(): void {
 
   }
-  addQuantityForItem( quantity : string){
+  onNoClick(): void {
     this.dialogRef.close();
   }
+}
+export class DialogData {
+  public selectedQuantity: string ="";
+  public dialogDescription: string = "";
+
 }
 

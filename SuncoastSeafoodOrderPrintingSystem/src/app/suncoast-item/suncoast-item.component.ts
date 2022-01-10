@@ -1,6 +1,7 @@
 import { Component, ElementRef, Inject, OnInit, ɵɵsetComponentScope,NgZone } from '@angular/core';
 import { RequiredValidator } from '@angular/forms';
 import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dialog';
+import { stringify } from 'querystring';
 import { SuncoastItemDialogComponent } from '../suncoast-item-dialog/suncoast-item-dialog.component';
 import { SuncoastItem } from '../SuncoastItem'
 @Component({
@@ -19,7 +20,8 @@ export class SuncoastItemComponent implements OnInit {
   currentItems: SuncoastItem[] = [];
   currentItemsAfterEliminatingDublicates: SuncoastItem[] = [];
   currentItemsInStringFormat = "";
-
+  selectedQuantity: string ="";
+  SuncoastItemDescription: string = "";
 
   items = require('../../assets/ItemsInSuncoastSeafoodStore.json');
   ngOnInit(): void {
@@ -38,6 +40,22 @@ export class SuncoastItemComponent implements OnInit {
     }
     console.log(this.fishAndChipsPacks)
   }
+  openDialog(item: SuncoastItem) {
+    // item.quantity = String(this.suncoastItem.selectedQuantity);
+    const dialogRef = this.dialog.open(SuncoastItemDialogComponent,{disableClose:false,
+      data:{quantity: this.selectedQuantity, description: this.SuncoastItemDescription}
+    });
+    
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('Dialog result:' + result);
+      item.quantity = result.selectedQuantity;
+      item.description = result.dialogDescription;
+      if(result != undefined){
+        this.addItemToOrder(item);
+      }
+    });
+  }
+  
   printThisPage() {
     //window.print();
     console.log(this.currentItems)
@@ -46,7 +64,7 @@ export class SuncoastItemComponent implements OnInit {
     this.currentItemsInStringFormat = "";
     this.currentItems.push(item);
     for (let currentItem of this.currentItems) {
-      this.currentItemsInStringFormat = this.currentItemsInStringFormat + currentItem.name + currentItem.size +"("+ currentItem.quantity +")"+ "," + " ";
+      this.currentItemsInStringFormat = this.currentItemsInStringFormat + currentItem.quantity +" "+currentItem.name + currentItem.size + " - Diet Description: " +currentItem.description  +",  " + " ";
     }
     console.log(this.currentItems)
   }
@@ -55,22 +73,6 @@ export class SuncoastItemComponent implements OnInit {
     this.currentItemsInStringFormat = "";
   }
 
-  openDialog(item: SuncoastItem) {
-    // item.quantity = String(this.suncoastItem.selectedQuantity);
-    const dialogRef = this.dialog.open(SuncoastItemDialogComponent,{disableClose:false
-    });
-    
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('Dialog result:' + result);
-      item.quantity = result;
-      this.addItemToOrder(item);
-    });
 
-  }
-  onNoClick(): void {
-    this.ngZone.run(() => {
-      this.dialogRef.close();
-    });
-  }
 }
 

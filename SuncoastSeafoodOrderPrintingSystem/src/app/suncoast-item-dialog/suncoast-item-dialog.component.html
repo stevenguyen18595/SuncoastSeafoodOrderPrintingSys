@@ -3,17 +3,17 @@
 <mat-dialog-content class="mat-typography">
   <mat-form-field appearance="fill">
     <mat-label>Quantity of this Item</mat-label>
-    <mat-select  [(ngModel)]="selectedQuantity">
+    <mat-select  [(ngModel)]="data.selectedQuantity">
       <mat-option *ngFor = "let number of quantityOfItem"  [value] = "number">{{number}}</mat-option>
     </mat-select>
   </mat-form-field>
   <hr>
   <mat-form-field appearance="fill" >
     <mat-label>Any Special Requirement</mat-label>
-    <input matInput id="dialogDescription">
+    <input matInput id="dialogDescription" [(ngModel)] = "data.dialogDescription">
   </mat-form-field>
 
 
 </mat-dialog-content>
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="selectedQuantity" >Add To Order</button>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data" >Add To Order</button>
