@@ -6,7 +6,7 @@ import { OrderComponent } from "./order/order.component";
 import { SuncoastItemComponent } from "./suncoast-item/suncoast-item.component";
 
 const appRoutes: Routes = [
-    {path:'', component:AppComponent},
+    {path:'', redirectTo:'/Suncoast-item',pathMatch:'full'},
     {path:'Suncoast-item', component: SuncoastItemComponent},
     {path:'order', component:OrderComponent}
 ];

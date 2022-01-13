@@ -1,28 +1,32 @@
-import { Component, ElementRef, Inject, OnInit, ɵɵsetComponentScope,NgZone } from '@angular/core';
+import { Component, ElementRef, Inject, OnInit, ɵɵsetComponentScope,NgZone, Output,EventEmitter } from '@angular/core';
 import { RequiredValidator } from '@angular/forms';
 import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dialog';
 import { stringify } from 'querystring';
 import { SuncoastItemDialogComponent } from '../suncoast-item-dialog/suncoast-item-dialog.component';
 import { SuncoastItem } from '../model/SuncoastItem.model'
+import { OrderService } from '../services/order.service';
+
+
 @Component({
   selector: 'app-suncoast-item',
   templateUrl: './suncoast-item.component.html',
-  styleUrls: ['./suncoast-item.component.css']
+  styleUrls: ['./suncoast-item.component.css'],
+  
 })
 export class SuncoastItemComponent implements OnInit {
 
-  constructor(public dialog: MatDialog, private ngZone: NgZone, public dialogRef: MatDialogRef<SuncoastItemDialogComponent>) { }
+  constructor(public dialog: MatDialog, private ngZone: NgZone, public dialogRef: MatDialogRef<SuncoastItemDialogComponent>, private orderService:OrderService) {
+  }
   fishAndChipsPacks: SuncoastItem[] = [];
   fishes: SuncoastItem[] = [];
   burgers: SuncoastItem[] = [];
   SideDished: SuncoastItem[] = [];
   chips: SuncoastItem[] = [];
   currentItems: SuncoastItem[] = [];
-  currentItemsAfterEliminatingDublicates: SuncoastItem[] = [];
+  // currentItemsAfterEliminatingDublicates: SuncoastItem[] = [];
   currentItemsInStringFormat = "";
   selectedQuantity: string ="";
   SuncoastItemDescription: string = "";
-
   items = require('../../assets/ItemsInSuncoastSeafoodStore.json');
   ngOnInit(): void {
     for (let i in this.items.items) {
@@ -39,6 +43,7 @@ export class SuncoastItemComponent implements OnInit {
       }
     }
     console.log(this.fishAndChipsPacks)
+    this.currentItems = this.orderService.getAllItemInThisOrder();
   }
   openDialog(item: SuncoastItem) {
     // item.quantity = String(this.suncoastItem.selectedQuantity);
@@ -62,14 +67,12 @@ export class SuncoastItemComponent implements OnInit {
   }
   addItemToOrder(item: SuncoastItem) {
     this.currentItemsInStringFormat = "";
-    this.currentItems.push(item);
-    for (let currentItem of this.currentItems) {
-      this.currentItemsInStringFormat = this.currentItemsInStringFormat + currentItem.quantity +" "+currentItem.name + currentItem.size + " - Diet Description: " +currentItem.description  +",  " + " ";
-    }
-    console.log(this.currentItems)
+    this.orderService.addItemToOrder(item);
+    this.currentItems = this.orderService.getAllItemInThisOrder();
   }
   deleteCurrentOrder() {
     this.currentItems = [];
+    this.orderService.deleteAllItemInThisOrder();
     this.currentItemsInStringFormat = "";
   }
 

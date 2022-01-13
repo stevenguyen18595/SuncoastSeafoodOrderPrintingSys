@@ -1,1 +1,27 @@
-<p>order works!</p>
+
+<div class="container">
+    <h2>Please Double Check </h2>
+    <table class="table table-bordered table-striped table-responsive-stack" id="tableOne">
+       <thead class="thead-dark">
+          <tr>
+             <th>Name Of Item</th>
+             <th>Diet Description</th>
+             <th>Quantity</th>
+             <th>Price/item</th>
+             <th>Edit/Delete</th>
+
+          </tr>
+       </thead>
+       <tbody>
+          <tr  *ngFor="let thisSuncoastItem of currentItemsInThisOrder">
+             <td>{{thisSuncoastItem.name}} {{thisSuncoastItem.size}} </td>
+             <td>{{thisSuncoastItem.description}}</td>
+             <td>{{thisSuncoastItem.quantity}}</td>
+             <td>${{thisSuncoastItem.price}}</td>
+             <td><button (click)="deleteThisItem(thisSuncoastItem)">Delete</button></td>
+          </tr>
+       </tbody>
+    </table>
+    <h4 class="float-right">Total: ${{totalMoneyForThisOrder}}</h4>
+    <button class="btn btn-info float-none" routerLink="">ADD MORE ITEM(S)</button>
+ </div>

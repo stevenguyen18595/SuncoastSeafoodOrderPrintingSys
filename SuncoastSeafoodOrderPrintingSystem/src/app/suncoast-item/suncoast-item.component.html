@@ -349,17 +349,25 @@
     </div>
   </div>
 </div>
-<div class="form">
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">This Order now includes:</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" >{{currentItemsInStringFormat}}</textarea>
-  </div>
-</div>
 <div class="content">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Seafood Name</th>
+        <th>Quantity</th>
+        <th>Diet Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of currentItems">
+        <td>{{item.name}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.description}}</td>
+      </tr>
+    </tbody>
+  </table>
   <div class="btn-group">
-    <button class=" btn btn-danger" (click)="printThisPage()">Generate Order</button>
-    <button class="btn btn-success" (click)="deleteCurrentOrder()">Delete All Items In Order</button>
+    <button class=" btn btn-info" routerLink="/order">Generate Order </button>
+    <button class="btn btn-danger" (click)="deleteCurrentOrder()">Delete All Items In Order</button>
   </div>
-
-  
 </div>
