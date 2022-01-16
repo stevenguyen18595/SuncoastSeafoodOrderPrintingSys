@@ -29,33 +29,36 @@ export class SuncoastItemComponent implements OnInit {
   SuncoastItemDescription: string = "";
   items = require('../../assets/ItemsInSuncoastSeafoodStore.json');
   ngOnInit(): void {
-    for (let i in this.items.items) {
-      if (this.items.items[i].category == "Fish And Chip Pack") {
-        this.fishAndChipsPacks.push(this.items.items[i]);
-      } else if (this.items.items[i].category == "Fish") {
-        this.fishes.push(this.items.items[i]);
-      } else if (this.items.items[i].category == "Burgers") {
-        this.burgers.push(this.items.items[i]);
-      } else if (this.items.items[i].category == "Chips") {
-        this.chips.push(this.items.items[i]);
+    for (let item of this.items) {
+      if (item.category == "Fish And Chip Pack") {
+        this.fishAndChipsPacks.push(item);
+      } else if (item.category == "Fish") {
+        this.fishes.push(item);
+      } else if (item.category == "Burgers") {
+        this.burgers.push(item);
+      } else if (item.category == "Chips") {
+        this.chips.push(item);
       } else {
-        this.SideDished.push(this.items.items[i]);
+        this.SideDished.push(item);
       }
     }
+    //the 2 below for testing purposes
+    console.log(this.items);
     console.log(this.fishAndChipsPacks)
     this.currentItems = this.orderService.getAllItemInThisOrder();
   }
   openDialog(item: SuncoastItem) {
     // item.quantity = String(this.suncoastItem.selectedQuantity);
     const dialogRef = this.dialog.open(SuncoastItemDialogComponent,{disableClose:false,
-      data:{quantity: this.selectedQuantity, description: this.SuncoastItemDescription}
+      data:{quantity: this.selectedQuantity     
+        , description: this.SuncoastItemDescription}
     });
     
     dialogRef.afterClosed().subscribe(result => {
       console.log('Dialog result:' + result);
       item.quantity = result.selectedQuantity;
       item.description = result.dialogDescription;
-      if(result != undefined){
+      if(result.selectedQuantity != undefined){
         this.addItemToOrder(item);
       }
     });

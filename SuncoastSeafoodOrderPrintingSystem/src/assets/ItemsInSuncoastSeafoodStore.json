@@ -1,5 +1,5 @@
-{
-  "items": [{
+[
+    {
       "name": "Special (Dory & Chips",
       "price": "12",
       "size": "Large",
@@ -415,5 +415,4 @@
         "description":"",
         "quantity":""
       }
-  ]
-}
+    ]

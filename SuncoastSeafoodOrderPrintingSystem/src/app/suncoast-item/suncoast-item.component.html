@@ -64,7 +64,7 @@
     padding: 0 16px;
     max-width: 960px;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
 
   svg.material-icons {
@@ -83,8 +83,8 @@
   .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
+    justify-content: initial;
+    /* margin-top: 16px; */
   }
 
   .card {
@@ -299,57 +299,59 @@
   <h5>Chips Pack</h5>
   <div class="card-container">
     <div *ngFor="let chipsItem of chips ">
-      <button id="chipPack" class="card card-small" (click)="openDialog(chipsItem)" tabindex="0">
+      <button id="chipPack" class="btn btn-outline-warning" (click)="openDialog(chipsItem)" tabindex="0">
         <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
-        <span>{{chipsItem.name}}</span>
-        <p><small>{{chipsItem.size}}</small></p>
+        <span>{{chipsItem.name}}<small>{{chipsItem.size}}</small></span>
       </button>
     </div>
   </div>
+  <hr class="fish-line">
   <h5>Fish And Chips Packs</h5>
   <input type="hidden" #selection>
   <div class="card-container">
     <div *ngFor="let fishAndChipItem of fishAndChipsPacks">
-      <button id="FishAndChips" class="card card-small" (click)="openDialog(fishAndChipItem)" tabindex="0">
+      <button id="FishAndChips" class="btn btn-outline-info" (click)="openDialog(fishAndChipItem)" tabindex="0">
         <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{fishAndChipItem.name}}</span>
       </button>
     </div>
   </div>
+  <hr class="fish-line">
   <h5>Fish Only</h5>
   <div class="card-container">
     <div *ngFor="let FishItem of fishes ">
-      <button id="fishPack" class="card card-small" (click)="openDialog(FishItem)" tabindex="0">
+      <button id="fishPack" class="btn btn-outline-primary" (click)="openDialog(FishItem)" tabindex="0">
         <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{FishItem.name}}</span>
       </button>
     </div>
   </div>
+  <hr class="fish-line">
   <h5>Burgers</h5>
   <div class="card-container">
     <div *ngFor="let burgerItem of burgers ">
-      <button id="burgers" class="card card-small" (click)="openDialog(burgerItem)" tabindex="0">
+      <button id="burgers" class="btn btn-outline-secondary" (click)="openDialog(burgerItem)" tabindex="0">
         <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{burgerItem.name}}</span>
       </button>
     </div>
   </div>
+  <hr class="fish-line">
   <h5>Special Dishes</h5>
   <div class="card-container">
     <div *ngFor="let specialItem of SideDished ">
-      <button id="specialDishes" class="card card-small" (click)="openDialog(specialItem)" tabindex="0">
+      <button id="specialDishes" class="btn btn-outline-success" (click)="openDialog(specialItem)" tabindex="0">
         <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg> -->
         <span>{{specialItem.name}}</span>
       </button>
     </div>
   </div>
-</div>
-<div class="content">
+  <hr class="fish-line">
   <table class="table table-hover">
     <thead>
       <tr>
@@ -366,6 +368,7 @@
       </tr>
     </tbody>
   </table>
+<div class="content">
   <div class="btn-group">
     <button class=" btn btn-info" routerLink="/order">Generate Order </button>
     <button class="btn btn-danger" (click)="deleteCurrentOrder()">Delete All Items In Order</button>

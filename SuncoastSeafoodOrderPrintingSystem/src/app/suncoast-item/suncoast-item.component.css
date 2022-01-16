@@ -1,4 +1,4 @@
-#chipPack{
+/* #chipPack{
     color:#fd7e14;
 }
 #FishAndChips{
@@ -12,19 +12,33 @@
 }
 #specialDishes{
     color: #28a745;
+} */
+label {
+  color: #17a2b8;
+  font-weight: bold;
 }
-label{
-    color: #17a2b8;
-    font-weight: bold;
-}
+
 #logout-button {
-    color: white;
-    background-color: #16163f;
-    border: 1px solid black;
+  color: white;
+  background-color: #16163f;
+  border: 1px solid black;
 }
 
 #delete-product-button {
-    color: white;
-    background-color: #145214;
-    border: 1px solid black;
+  color: white;
+  background-color: #145214;
+  border: 1px solid black;
+}
+
+button {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.fish-line {
+  width: 70%;
+  margin: auto;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  position: relative;
+  border: 1px dashed #343a40;
 }

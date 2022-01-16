@@ -1,6 +1,6 @@
 
 <div class="container">
-    <h2>Please Double Check </h2>
+    <h3>Please confirm the items below with customer </h3>
     <table class="table table-bordered table-striped table-responsive-stack" id="tableOne">
        <thead class="thead-dark">
           <tr>
@@ -18,10 +18,11 @@
              <td>{{thisSuncoastItem.description}}</td>
              <td>{{thisSuncoastItem.quantity}}</td>
              <td>${{thisSuncoastItem.price}}</td>
-             <td><button (click)="deleteThisItem(thisSuncoastItem)">Delete</button></td>
+             <td><button (click)="deleteThisItemFromCurrentOrder(thisSuncoastItem)">Delete</button></td>
           </tr>
        </tbody>
     </table>
-    <h4 class="float-right">Total: ${{totalMoneyForThisOrder}}</h4>
+    <h4 class="float-right" >Total: ${{totalMoneyForThisOrder}}</h4>
     <button class="btn btn-info float-none" routerLink="">ADD MORE ITEM(S)</button>
+    <button class="btn btn-success">Send Order</button>
  </div>
