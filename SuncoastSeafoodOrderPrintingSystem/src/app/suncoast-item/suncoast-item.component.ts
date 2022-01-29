@@ -58,6 +58,7 @@ export class SuncoastItemComponent implements OnInit {
       console.log('Dialog result:' + result);
       item.quantity = result.selectedQuantity;
       item.description = result.dialogDescription;
+      console.log(item.quantity);
       if(result.selectedQuantity != undefined){
         this.addItemToOrder(item);
       }

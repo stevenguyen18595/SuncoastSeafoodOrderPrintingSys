@@ -31,6 +31,7 @@ export class OrderComponent implements OnInit {
     for (let item of this.currentItemsInThisOrder){
       this.suncoastOrder.totalAmount = this.suncoastOrder.totalAmount + parseFloat(item.price)*parseFloat(item.quantity);
     }
+    this.totalMoneyForThisOrder = this.suncoastOrder.totalAmount;
   }
 
   deleteThisItemFromCurrentOrder(item: SuncoastItem){
@@ -40,6 +41,7 @@ export class OrderComponent implements OnInit {
     for (let item of this.currentItemsInThisOrder){
       this.suncoastOrder.totalAmount = this.suncoastOrder.totalAmount + parseFloat(item.price)*parseFloat(item.quantity);
     }
+    this.totalMoneyForThisOrder = this.suncoastOrder.totalAmount;
   }
   setOrderNumberForThisOrder(){
     
